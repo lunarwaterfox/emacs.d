@@ -10,6 +10,7 @@
 ;; Base setting
 ;;----------------------------------------------------------------------------
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+;(require 'init-proxy)
 (require 'init-util)
 (require 'init-elpa)
 (require 'init-themes)
