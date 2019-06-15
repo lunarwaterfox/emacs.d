@@ -10,7 +10,7 @@
 ;; Base setting
 ;;----------------------------------------------------------------------------
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-;(require 'init-proxy)
+(require 'init-proxy)
 (require 'init-util)
 (require 'init-elpa)
 (require 'init-themes)
@@ -34,9 +34,20 @@
 ;; Develop
 ;;----------------------------------------------------------------------------
 (require 'init-demo)
+(require 'init-project-home)
+(require 'init-jekyll-project)
 
+;;----------------------------------------------------------------------------
+;; customize
+;;----------------------------------------------------------------------------
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(when (file-exists-p custom-file)
+  (load custom-file))
 
+;;----------------------------------------------------------------------------
+;; local
+;;----------------------------------------------------------------------------
+(require 'init-local)
 
 
 (provide 'init)
