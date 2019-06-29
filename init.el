@@ -36,7 +36,7 @@
 (require 'init-demo)
 (require 'init-project-home)
 (require 'init-jekyll-project)
-
+(require 'init-project-tree)
 ;;----------------------------------------------------------------------------
 ;; customize
 ;;----------------------------------------------------------------------------
