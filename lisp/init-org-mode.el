@@ -9,12 +9,16 @@
 
 ;; todo list
 (setq org-todo-keywords
-      '((sequence "TODO" "|" "DONE" "CANCELED")))
+      '((sequence "TODO(t)" "|" "DONE(d!)" "CANCELED(c@)")))
 
 (setq org-todo-keyword-faces
       '(("TODO" . "yellow")
         ("DONE" . (:foreground "green" :weight bold))
         ("CANCELED" . (:foreground "red" :weight bold))))
+
+(setq org-capture-templates
+      '(("t" "Todo" entry (file+headline "~/Documents/org/task.org" "Tasks")
+         "* TODO %?")))
 
 ;; mobile setting
 (setq org-directory "~/Documents/org")
