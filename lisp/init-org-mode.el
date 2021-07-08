@@ -20,6 +20,8 @@
       '(("t" "Todo" entry (file+headline "~/Documents/org/task.org" "Tasks")
          "* TODO %?")))
 
+(global-set-key (kbd "C-c c") 'org-capture)
+
 ;; mobile setting
 (setq org-directory "~/Documents/org")
 (setq org-mobile-inbox-for-pull "~/Documents/org/inbox.org")
